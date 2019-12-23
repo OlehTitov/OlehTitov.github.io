@@ -21,9 +21,9 @@
 				<h1>Week 2 <span>Steve Jobs. The Lost Interview</span></h1>	
 			</header>
 			<div class="main clearfix">
-				<form id="nl-form" action="https://hooks.zapier.com/hooks/catch/5015434/otmj07i/" class="nl-form" type="POST">
-					And they were <input type="text" name="very-kind" value="" placeholder="xxxx xxxx"/> and they <input type="text" name="showed-me" value="" placeholder="xxxxxx xx"/> what they were working on.
-					And they showed me really uhm 3 <input type="text" name="things" value="" placeholder="xxxxxx"/>.
+				<form id="nl-form" class="nl-form" type="POST">
+					And they were very <input type="text" name="kind" value="" placeholder=""/> and they <input type="text" name="showed-me" value="" placeholder="xxxxxx xx"/> what they were working on.
+					And they showed me really ... uhm ... 3 <input type="text" name="things" value="" placeholder="xxxxxx"/>.
 			
 					<div class="nl-submit-wrap">
 						<button class="nl-submit" type="submit" id="Form-submit">Submit</button>
@@ -41,7 +41,7 @@
 		$('#nl-form').submit(function(e){
     e.preventDefault();
     $.ajax({
-        url:'https://hooks.zapier.com/hooks/catch/5015434/otmj07i/',
+        url:'https://hook.integromat.com/us9l7oe36s8v1ldh4b0nvhabeg59rhjm',
         type:'post',
         data:$('#nl-form').serialize(),
         success:function(){
