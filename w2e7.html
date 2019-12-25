@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>English exercises: W2E7</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<!-- Top Navigation -->
+			
+			<header>
+				<h1>Week 2 <span>Steve Jobs. The Lost Interview</span></h1>	
+			</header>
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+                    And <input type="text" name="1" value="" placeholder="xxxxxx"/>, you know, ten minutes it was <input type="text" name="2" value="" placeholder="xxxxxxx xx xx"/> that all computers would <input type="text" name="3" value="" placeholder="xxxx xxxx xxxx"/>.
+                    
+					<input type="hidden" id="custId" name="custId" value="w2e7">
+
+                    <h6><span>Send me results at <input type="text" name="email" value="" placeholder="xxx@xxx.xxx" required/></span></h6>
+                    
+			
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit" id="Form-submit">Submit</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+		$('#nl-form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url:'https://hook.integromat.com/us9l7oe36s8v1ldh4b0nvhabeg59rhjm',
+        type:'post',
+        data:$('#nl-form').serialize(),
+        success:function(){
+          // Redirect to another success page
+          window.location = "http://olehtitov.github.io/thank-you.html";
+        }
+    });
+});
+		</script>
+	</body>
+</html>
